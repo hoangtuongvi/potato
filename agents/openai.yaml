@@ -1,0 +1,6 @@
+interface:
+  display_name: "PAI Core for Codex"
+  short_description: "Visible PAI algorithm workflow for Codex"
+  default_prompt: "Use $pai-core-codex to work through this with the PAI algorithm: observe, think, plan, build, execute, verify, learn, and summarize."
+policy:
+  allow_implicit_invocation: true
