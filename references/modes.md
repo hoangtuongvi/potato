@@ -1,4 +1,4 @@
-# PAI Work Modes
+# Potato Work Modes
 
 Use the smallest mode that advances the user's actual goal. Blend modes when needed, but keep the dominant mode clear.
 
