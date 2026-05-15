@@ -1,6 +1,6 @@
 # Potato
 
-Potato is a personal assistant infrastructure operating framework for Codex.
+Potato is a personal AI infrastructure operating framework for Codex.
 
 It gives Codex a visible, disciplined workflow for meaningful tasks: observe the situation, summarize the strategy, plan, act carefully, verify the result, and capture useful learning. It started as a Codex-native take on PAI-style workflows, but the primary name is now Potato.
 
