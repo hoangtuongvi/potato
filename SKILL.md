@@ -59,7 +59,7 @@ When the platform supports choice prompts, present clear options and mark the sa
 
 ## Automatic Mode Selection
 
-The user should be able to say "use PAI" without choosing a mode. Infer the mode from the request:
+The user should be able to say "use Potato" without choosing a mode. Infer the mode from the request:
 
 - Questions, tradeoffs, or unclear goals: Compass.
 - Inspect, debug, research, or explain: Scout.
