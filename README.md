@@ -1,15 +1,15 @@
-# PAI Core for Codex
+# Potato
 
-PAI Core for Codex is a Codex skill that brings a PAI-style operating workflow into Codex. It is inspired by the visible PAI loop used in Claude Code, adapted for Codex skills, Codex tool use, and file-based memory.
+Potato is a personal assistant infrastructure operating framework for Codex.
 
-It is not a direct Claude PAI port. Claude-specific hooks and command systems do not exist in Codex in the same form, so this skill focuses on the portable behavior: observe, reason clearly, plan, act carefully, verify, and capture useful learning.
+It gives Codex a visible, disciplined workflow for meaningful tasks: observe the situation, summarize the strategy, plan, act carefully, verify the result, and capture useful learning. It started as a Codex-native take on PAI-style workflows, but the primary name is now Potato.
 
 ## What It Does
 
-For non-trivial work, the skill guides Codex through a visible algorithm:
+For non-trivial work, Potato guides Codex through a visible algorithm:
 
 ```text
-PAI ALGORITHM
+POTATO ALGORITHM
 
 OBSERVE: What the user wants, important facts, constraints, and risk level.
 THINK: A short reasoning summary and selected strategy.
@@ -18,7 +18,7 @@ BUILD: What Codex is doing now.
 EXECUTE: What happened after action or inspection.
 VERIFY: Checks performed and resulting state.
 LEARN: Durable note, session caveat, or memory update if any.
-PAI: Final concise outcome.
+POTATO: Final concise outcome.
 ```
 
 It also adds:
@@ -35,7 +35,7 @@ Clone or copy this repository into your Codex skills folder:
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone https://github.com/hoangtuongvi/pai-core-codex.git ~/.codex/skills/pai-core-codex
+git clone https://github.com/hoangtuongvi/potato.git ~/.codex/skills/potato
 ```
 
 Restart or open a new Codex session so the skill list refreshes.
@@ -45,43 +45,43 @@ Restart or open a new Codex session so the skill list refreshes.
 Guaranteed trigger:
 
 ```text
-Use $pai-core-codex. Help me fix this app.
+Use $potato. Help me fix this app.
 ```
 
 Natural trigger:
 
 ```text
-Use PAI. Merge this folder into the project.
+Use Potato. Merge this folder into the project.
 ```
 
-The user should not need to choose a mode. The skill infers the right working style from the task.
+The user should not need to choose a mode. Potato infers the right working style from the task.
 
 ## Example Prompts
 
 ```text
-Use PAI. Inspect this project and summarize what it is. Do not edit files.
+Use Potato. Inspect this project and summarize what it is. Do not edit files.
 ```
 
 ```text
-Use PAI. Merge /source/path into /destination/path.
+Use Potato. Merge /source/path into /destination/path.
 ```
 
 ```text
-Use PAI. Review this change for bugs and missing tests.
+Use Potato. Review this change for bugs and missing tests.
 ```
 
 ```text
-Use PAI. Remember that I prefer concise final answers with verification called out.
+Use Potato. Remember that I prefer concise final answers with verification called out.
 ```
 
 ## Memory
 
-PAI memory is explicit and file-based. The skill does not create hidden memory.
+Potato memory is explicit and file-based. The skill does not create hidden memory.
 
 Recommended global memory:
 
 ```text
-~/.codex/pai/
+~/.codex/potato/
   preferences.md
   tools.md
   workflows.md
@@ -90,7 +90,7 @@ Recommended global memory:
 Recommended project memory:
 
 ```text
-.pai/
+.potato/
   project.md
   preferences.md
   decisions.md
@@ -110,7 +110,8 @@ references/modes.md
 
 ## Notes
 
-- `$pai-core-codex` is the strongest trigger.
-- `Use PAI` should usually work.
-- Misspellings like `usepai` or `@pai` are not guaranteed.
-- To make PAI behavior default without saying "Use PAI", add an `AGENTS.md` rule in your project that tells Codex to use the PAI algorithm for non-trivial work.
+- `$potato` is the strongest trigger.
+- `Use Potato` should usually work.
+- `PAI` is kept as a legacy alias in the skill description.
+- Misspellings like `usepotato` or `@potato` are not guaranteed.
+- To make Potato behavior default without saying "Use Potato", add an `AGENTS.md` rule in your project that tells Codex to use the Potato algorithm for non-trivial work.
