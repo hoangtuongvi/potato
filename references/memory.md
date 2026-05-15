@@ -1,13 +1,13 @@
-# PAI Memory
+# Potato Memory
 
-PAI memory is explicit, file-based, and editable by the user. It should make future work easier without creating a hidden profile or stale mythology.
+Potato memory is explicit, file-based, and editable by the user. It should make future work easier without creating a hidden profile or stale mythology.
 
 ## Recommended Locations
 
 Project memory:
 
 ```text
-.pai/
+.potato/
   project.md
   preferences.md
   decisions.md
@@ -17,7 +17,7 @@ Project memory:
 Global memory:
 
 ```text
-~/.codex/pai/
+~/.codex/potato/
   preferences.md
   tools.md
   workflows.md
@@ -27,7 +27,7 @@ Use project memory for repo-specific facts. Use global memory only for stable us
 
 ## Initialization
 
-Create memory files only when the user asks for PAI memory, project setup, or persistent preferences. Do not create them just because the skill was invoked.
+Create memory files only when the user asks for Potato memory, project setup, or persistent preferences. Do not create them just because the skill was invoked.
 
 Minimal project `project.md`:
 
